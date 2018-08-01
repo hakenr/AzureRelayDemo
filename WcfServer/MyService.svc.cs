@@ -7,6 +7,7 @@ using System.Text;
 
 namespace WcfServer
 {
+	[ServiceBehavior(AddressFilterMode = AddressFilterMode.Any)]
 	public class MyService : IMyService
 	{
 		public string Echo(string input)
